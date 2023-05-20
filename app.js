@@ -60,9 +60,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-  .connect(
-    'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/messages?retryWrites=true'
-  )
+  .connect('mongodb+srv://dbuser:CjBeayaVQJr8Y9YL@cluster0.4k4bb.mongodb.net/PostMng?retryWrites=true&w=majority')
   .then(result => {
     app.listen(8080);
   })
